@@ -2,10 +2,11 @@
 $(function() {
   $(".change-devouredness").on("click", function(event) {
     let id = $(this).data("id");
-    let newDevour = $(this).data("newdevoured");
+    // let newDevoured = $(this).data("newdevoured");
+    let newDevoured = true
 
     let newDevouredState = {
-      devoured: newdevoured
+      devoured: newDevoured
     };
 
     // Send the PUT request.
@@ -14,7 +15,7 @@ $(function() {
       data: newDevouredState
     }).then(
       function() {
-        console.log("changed devoured to", newDevour);
+        console.log("changed devoured to", newDevoured);
         // Reload the page to get the updated list
         location.reload();
       }
