@@ -1,7 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: rgb(247, 235, 148);
+}
+.burger {
+  grid-column: span 12;
+  background-image: ("public/assets/images/burger-icon.png");
+  margin: auto;
+}
+.icon{
+  max-width: 20%;
+}
+.header {
+  grid-column: span 12;
+  text-align: center;
+}
+.to-eat{
+  grid-column: span 6;
+  text-align: center;
+}
+.devoured{
+  grid-column: span 6;
+  text-align: center;
+}
+.add-burger {
+  grid-column: span 12;
+  margin: auto;
+  text-align: center;
+}
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
 }
 
 .label {
@@ -16,4 +45,8 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+.btn {
+  background-color: rgb(24, 94, 185);
+  color: whitesmoke;
 }
